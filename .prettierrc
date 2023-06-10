@@ -5,6 +5,7 @@
   "singleQuote": true,
   "arrowParens": "avoid",
   "endOfLine": "lf",
-
-   "plugins": ["prettier-plugin-tailwindcss"], "pluginSearchDirs": false 
+  "singleAttributePerLine": true,
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "pluginSearchDirs": false
 }
