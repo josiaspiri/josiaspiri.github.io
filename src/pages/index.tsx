@@ -16,13 +16,21 @@ const IndexPage: React.FC<PageProps> = () => {
   ];
 
   return (
-    <div className="flex flex-wrap gap-x-[2vw] justify-center p-[2vw] m-[2vw]">
-      {Links.length > 0 &&
-        Links.map(({name, url, target}) => (
-          <Link key={name} to={url} target={target} className='inline-block'>
-            {name}
-          </Link>
-        ))}
+    <div className="prose prose-invert text-center">
+      <h1>Josias Piri</h1>
+      <div className="-mx-[calc(5px+2vw)]">
+        {Links.length > 0 &&
+          Links.map(({name, url, target}) => (
+            <Link
+              key={name}
+              to={url}
+              target={target}
+              className="mx-[calc(5px+1vw)] inline-block"
+            >
+              {name}
+            </Link>
+          ))}
+      </div>
     </div>
   );
 };
