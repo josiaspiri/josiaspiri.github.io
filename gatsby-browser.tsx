@@ -3,7 +3,7 @@ import type {GatsbyBrowser} from 'gatsby';
 import Layout from './src/components/Layout';
 import './src/styles/global.scss';
 
-export const wrapRootElement: GatsbyBrowser['wrapRootElement'] = ({
+export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({
   element,
 }) => {
   return <Layout>{element}</Layout>;
