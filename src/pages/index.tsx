@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Link, type PageProps} from 'gatsby';
 
 const IndexPage: React.FC<PageProps> = () => {
-  const Links: { name: string; url: string; target: string | undefined }[] = [
+  const Links: { name: string; url: string; target: string }[] = [
     {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/josias-piri-0a4a71aa',
@@ -16,16 +16,16 @@ const IndexPage: React.FC<PageProps> = () => {
   ];
 
   return (
-    <div className="prose prose-invert text-center">
+    <div className="w-fit mx-auto">
       <h1>Josias Piri</h1>
-      <div className="-mx-[calc(5px+2vw)]">
+      <div className="-mx-4">
         {Links.length > 0 &&
           Links.map(({name, url, target}) => (
             <Link
               key={name}
               to={url}
               target={target}
-              className="mx-[calc(5px+.5vw)] inline-block"
+              className="mx-4 inline-block"
             >
               {name}
             </Link>
@@ -36,3 +36,4 @@ const IndexPage: React.FC<PageProps> = () => {
 };
 
 export default IndexPage;
+export {Head} from '../components/GlobalHead';
