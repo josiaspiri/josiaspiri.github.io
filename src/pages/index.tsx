@@ -25,7 +25,7 @@ const IndexPage: React.FC<PageProps> = () => {
               key={name}
               to={url}
               target={target}
-              className="mx-[calc(5px+1vw)] inline-block"
+              className="mx-[calc(5px+.5vw)] inline-block"
             >
               {name}
             </Link>
