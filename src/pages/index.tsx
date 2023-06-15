@@ -16,7 +16,7 @@ const IndexPage: React.FC<PageProps> = () => {
   ];
 
   return (
-    <div className="w-fit mx-auto">
+    <div className="mx-auto w-fit">
       <h1>Josias Piri</h1>
       <div className="-mx-4">
         {Links.length > 0 &&
