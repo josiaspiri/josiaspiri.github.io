@@ -1,1 +1,0 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/routes.tsx","./src/components/errorboundary.tsx","./src/components/layout.tsx","./src/components/page.tsx","./src/pages/home.tsx","./src/pages/notfound.tsx","./vite.config.ts"],"errors":true,"version":"6.0.2"}
