@@ -1,51 +1,51 @@
 {
-  "name": "jpdev",
-  "version": "1.0.0",
+  "name": "josiaspiri.github.io",
+  "version": "",
+  "description": "",
+  "author": "",
   "private": true,
-  "description": "jpdev",
-  "keywords": [
-    "gatsby"
-  ],
+  "type": "module",
+  "homepage": "https://josiaspiri.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josiaspiri/josiaspiri.github.io"
+  },
+  "engines": {
+    "bun": ">=1.3.0"
+  },
+  "packageManager": "bun@1.3.12",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "dev": "vite",
+    "build": "vite build && cp dist/index.html dist/404.html",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@fontsource/ibm-plex-sans": "^5.2.8",
-    "@mdx-js/react": "^2.3.0",
-    "autoprefixer": "^10.4.24",
-    "gatsby": "^5.16.1",
-    "gatsby-plugin-image": "^3.16.0",
-    "gatsby-plugin-manifest": "^5.16.0",
-    "gatsby-plugin-mdx": "^5.16.0",
-    "gatsby-plugin-postcss": "^6.16.0",
-    "gatsby-plugin-sass": "^6.16.0",
-    "gatsby-plugin-sharp": "^5.16.0",
-    "gatsby-plugin-sitemap": "^6.16.0",
-    "gatsby-source-filesystem": "^5.16.0",
-    "gatsby-transformer-sharp": "^5.16.0",
-    "postcss": "^8.5.6",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "sass": "^1.97.3",
-    "tailwindcss": "^3.4.19"
+    "@tailwindcss/typography": "^0.5.19",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-router-dom": "^7.14.1",
+    "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.19",
-    "@types/node": "^18.19.130",
-    "@types/react": "^18.3.28",
-    "@types/react-dom": "^18.3.7",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
-    "eslint": "^7.32.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-plugin-react": "^7.37.5",
-    "prettier": "^2.8.8",
-    "prettier-plugin-tailwindcss": "^0.3.0",
-    "typescript": "^5.9.3"
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^10.2.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.5.0",
+    "postcss": "^8.5.10",
+    "prettier": "^3.8.3",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.2",
+    "vite": "^8.0.8"
   }
 }

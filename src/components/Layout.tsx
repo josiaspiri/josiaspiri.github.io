@@ -1,11 +1,9 @@
-import * as React from 'react';
+import { Outlet } from "react-router-dom";
 
-type LayoutProps = {
-  children: React.ReactNode
+export default function Layout() {
+  return (
+    <main className="prose-lg prose-invert m-auto p-4">
+      <Outlet />
+    </main>
+  );
 }
-
-const Layout: React.FC<LayoutProps> = ({children}) => {
-  return <div className="prose prose-lg prose-invert m-auto p-4">{children}</div>;
-};
-
-export default Layout;
