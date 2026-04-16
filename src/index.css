@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Atkinson Hyperlegible", sans-serif;
+}
+
+.not-prose a {
+  text-decoration: underline;
+}
